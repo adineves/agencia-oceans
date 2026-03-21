@@ -432,10 +432,20 @@ export default function App() {
             <div>
               <h3 className="mb-4 font-semibold">Redes Sociais</h3>
               <div className="flex flex-col gap-2 text-sm text-slate-400">
-                <a href="https://www.instagram.com/agencia_oceans?igsh=MmpwaHd2cTVsY3F5&utm_source=qr" target="_blank" className="hover:text-white">
+                <a
+                  href="https://www.instagram.com/agencia_oceans?igsh=MmpwaHd2cTVsY3F5&utm_source=qr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
                   Instagram
                 </a>
-                <a href="https://www.tiktok.com/@agencia_oceans?_r=1&_t=ZS-94qqTO6GVIS" target="_blank" className="hover:text-white">
+                <a
+                  href="https://www.tiktok.com/@agencia_oceans?_r=1&_t=ZS-94qqTO6GVIS"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
                   TikTok
                 </a>
               </div>
