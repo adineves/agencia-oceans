@@ -430,7 +430,7 @@ export default function App() {
             </div>
 
             <div>
-              <h3 className="mb-4 font-semibold">Navegação</h3>
+              <h3 className="mb-4 font-semibold">Redes Sociais</h3>
               <div className="flex flex-col gap-2 text-sm text-slate-400">
                 <a href="https://www.instagram.com/agencia_oceans?igsh=MmpwaHd2cTVsY3F5&utm_source=qr" target="_blank" className="hover:text-white">
                   Instagram
