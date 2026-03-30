@@ -110,7 +110,7 @@ export default function App() {
             transition={{ duration: 0.7 }}
           >
             <p className="mb-4 text-sm font-semibold text-blue-600">
-              Agência oficial do TikTok e Alii
+              Agência especializada em crescimento de criadores
             </p>
 
             <h1 className="text-4xl font-bold leading-tight md:text-5xl">
@@ -121,9 +121,7 @@ export default function App() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg text-slate-600">
-              Estrutura profissional, suporte completo e crescimento dentro das
-              plataformas para quem quer começar ou evoluir com mais
-              consistência.
+              Na Oceans, você recebe suporte completo para iniciar ou evoluir nas lives, com acompanhamento próximo, estratégias validadas e acesso a oportunidades reais dentro das plataformas.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -156,7 +154,7 @@ export default function App() {
                       Oceans
                     </p>
                     <h2 className="text-xl font-semibold text-slate-900">
-                      Estrutura moderna e profissional
+                      Beneficios em ser agenciado
                     </h2>
                   </div>
 
@@ -171,7 +169,8 @@ export default function App() {
                       Recrutamento facilitado
                     </p>
                     <p className="mt-2 text-2xl font-bold text-slate-950">
-                      Direcionamento rápido para WhatsApp
+                      Treinamentos e workshops
+                      Aprenda exatamente o que fazer nas lives com estratégias que realmente funcionam
                     </p>
                   </div>
 
@@ -179,24 +178,37 @@ export default function App() {
                     <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
                       <p className="text-sm text-slate-500">Suporte</p>
                       <p className="mt-2 text-lg font-semibold text-slate-900">
-                        Acompanhamento próximo
+                        Acompanhamento individual
+                        Você não fica perdido — recebe suporte próximo para evoluir com direção
                       </p>
                     </div>
 
                     <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
                       <p className="text-sm text-slate-500">Crescimento</p>
                       <p className="mt-2 text-lg font-semibold text-slate-900">
-                        Oportunidade nas plataformas
+                        Aulas de inglês e espanhol
+                        Amplie suas oportunidades e alcance novos públicos nas plataformas
                       </p>
                     </div>
                   </div>
 
-                  <div className="rounded-3xl bg-slate-950 p-5 text-white">
-                    <p className="text-sm text-slate-300">
+                  <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
+                    <p className="text-sm text-slate-500">
                       Presença digital profissional
                     </p>
                     <p className="mt-2 text-lg font-semibold">
-                      Visual premium, leve e alinhado à identidade da marca
+                      Sistema de incentivos
+                      Seu esforço e dedicação são reconhecidos com benefícios e incentivos internos
+                    </p>
+                  </div>
+
+                  <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
+                    <p className="text-sm text-slate-500">
+                      Incentivo profissional
+                    </p>
+                    <p className="mt-2 text-lg font-semibold">
+                      Premiações por desempenho
+                      Destaque-se e conquiste premios exclusivos
                     </p>
                   </div>
                 </div>
@@ -285,14 +297,15 @@ export default function App() {
               Sobre
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
-              Uma agência criada para apoiar quem quer entrar e crescer no
-              universo das lives
+              Se você se identifica com isso, a Oceans é pra você
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              A Oceans oferece suporte, direcionamento e uma estrutura mais
-              profissional para quem quer começar ou evoluir com mais
-              consistência nas plataformas, deixando o processo mais claro,
-              moderno e acessível.
+              Você quer começar nas lives ou já tentou antes, mas não teve os resultados que esperava.
+              Sente que falta direcionamento, estratégia e alguém para te mostrar o caminho certo.
+
+              Às vezes parece que está fazendo tudo sozinha, sem saber o que realmente funciona — e isso acaba desmotivando.
+
+              Se você busca uma forma real de crescer e transformar suas lives em uma oportunidade de renda, você está no lugar certo.
             </p>
           </motion.div>
 
@@ -430,19 +443,23 @@ export default function App() {
             </div>
 
             <div>
-              <h3 className="mb-4 font-semibold">Navegação</h3>
+              <h3 className="mb-4 font-semibold">Redes Sociais</h3>
               <div className="flex flex-col gap-2 text-sm text-slate-400">
-                <a href="#inicio" className="hover:text-white">
-                  Início
+                <a
+                  href="https://www.instagram.com/agencia_oceans?igsh=MmpwaHd2cTVsY3F5&utm_source=qr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
+                  Instagram
                 </a>
-                <a href="#sobre" className="hover:text-white">
-                  Sobre
-                </a>
-                <a href="#beneficios" className="hover:text-white">
-                  Benefícios
-                </a>
-                <a href="#contato" className="hover:text-white">
-                  Contato
+                <a
+                  href="https://www.tiktok.com/@agencia_oceans?_r=1&_t=ZS-94qqTO6GVIS"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white"
+                >
+                  TikTok
                 </a>
               </div>
             </div>
@@ -463,12 +480,12 @@ export default function App() {
             <br />
             Desenvolvido por{" "}
             <a
-              href="https://adler-neves.vercel.app/"
+              href="https://avus-digital.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-white"
             >
-              Adler Neves
+              Avus Digital
             </a>
           </div>
         </div>
