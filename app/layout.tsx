@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Oceans",
-  description: "Agência especializada em crescimento de criadores",
+  description: "Agência Oceans",
   icons: {
     icon: "/favicon.ico",
   },
