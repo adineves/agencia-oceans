@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const whatsappNumbers = ["5511999999999", "5511888888888"];
+  const whatsappNumbers = ["5511994866384", "5511888888888"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -166,27 +166,24 @@ export default function App() {
                 <div className="grid gap-4">
                   <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
                     <p className="text-sm text-slate-500">
-                      Recrutamento facilitado
+                      Treinamentos e workshops - Recrutamento facilitado
                     </p>
                     <p className="mt-2 text-2xl font-bold text-slate-950">
-                      Treinamentos e workshops
                       Aprenda exatamente o que fazer nas lives com estratégias que realmente funcionam
                     </p>
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                      <p className="text-sm text-slate-500">Suporte</p>
+                      <p className="text-sm text-slate-500">Suporte - Acompanhamento individual</p>
                       <p className="mt-2 text-lg font-semibold text-slate-900">
-                        Acompanhamento individual
-                        Você não fica perdido — recebe suporte próximo para evoluir com direção
+                        Você não fica perdido, recebe suporte próximo para evoluir com direção
                       </p>
                     </div>
 
                     <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                      <p className="text-sm text-slate-500">Crescimento</p>
+                      <p className="text-sm text-slate-500">Crescimento - Aulas de inglês e espanhol</p>
                       <p className="mt-2 text-lg font-semibold text-slate-900">
-                        Aulas de inglês e espanhol
                         Amplie suas oportunidades e alcance novos públicos nas plataformas
                       </p>
                     </div>
@@ -225,11 +222,10 @@ export default function App() {
               Plataformas
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-950 md:text-4xl">
-              Agência oficial das principais plataformas
+              Agência Parceira Oficial de Plataformas de Streaming
             </h2>
             <p className="mt-4 text-slate-600">
-              Estrutura conectada ao TikTok e ao Alii para oferecer mais
-              confiança, suporte e oportunidade para novos streamers.
+              Trabalhamos em parceria com plataformas de streaming, oferecendo oportunidades reais de crescimento e desenvolvimento no mercado de lives.
             </p>
           </div>
 
@@ -332,13 +328,14 @@ export default function App() {
         </div>
       </section>
 
-      <section id="beneficios" className="bg-slate-50 py-20">
+
+      <section id="beneficios" className="bg-slate-950 py-20 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">
               Benefícios
             </p>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
               Estrutura pensada para gerar mais confiança e oportunidade
             </h2>
           </div>
@@ -349,15 +346,23 @@ export default function App() {
               ["Mais organização", "Processos mais claros para facilitar o recrutamento."],
               ["Crescimento", "Estratégia e apoio para evoluir nas plataformas."],
               ["Oportunidade", "Um ambiente pensado para novas possibilidades de renda."],
-            ].map(([title, text]) => (
+            ].map(([title, text], i) => (
               <div
                 key={title}
-                className="rounded-3xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:bg-white/10"
               >
-                <h3 className="text-lg font-semibold text-slate-950">
+                {/* Número igual ao outro bloco */}
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-[#694eef] to-[#2e9cfe] text-sm font-bold text-white">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+
+                <h3 className="text-lg font-semibold text-white">
                   {title}
                 </h3>
-                <p className="mt-2 text-slate-600">{text}</p>
+
+                <p className="mt-2 text-white/70">
+                  {text}
+                </p>
               </div>
             ))}
           </div>
