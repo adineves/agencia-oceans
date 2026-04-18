@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const whatsappNumbers = ["5511994866384", "5511888888888"];
+  const whatsappNumbers = ["5511999999999", "5511888888888"];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -110,7 +110,7 @@ export default function App() {
             transition={{ duration: 0.7 }}
           >
             <p className="mb-4 text-sm font-semibold text-blue-600">
-              Agência especializada em crescimento de criadores
+              Agência especilizada em crescimento de criadores 
             </p>
 
             <h1 className="text-4xl font-bold leading-tight md:text-5xl">
@@ -121,7 +121,7 @@ export default function App() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg text-slate-600">
-              Na Oceans, você recebe suporte completo para iniciar ou evoluir nas lives, com acompanhamento próximo, estratégias validadas e acesso a oportunidades reais dentro das plataformas.
+              Na Oceans, você recebe suporte completo para iniciar ou evoluir nas lives, com acompanhamento proximo, estrategias validadas e acesso a oportunidades reais dentro das
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -146,68 +146,73 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="rounded-[2rem] border border-white/70 bg-white/90 p-4 shadow-2xl shadow-slate-200/80 backdrop-blur">
-              <div className="rounded-[1.5rem] bg-gradient-to-br from-slate-50 to-blue-50 p-6">
+
+            <div className="rounded-[2rem] border border-white/10 bg-[#07110F]/90 p-4 shadow-2xl shadow-black/40 backdrop-blur">
+
+              <div className="rounded-[1.5rem] bg-gradient-to-br from-[#0b1220] to-[#0a0f1f] p-6">
+
                 <div className="mb-6 flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-slate-500">
+                    <p className="text-sm font-medium text-white/60">
                       Oceans
                     </p>
-                    <h2 className="text-xl font-semibold text-slate-900">
-                      Beneficios em ser agenciado
+                    <h2 className="text-xl font-semibold text-white">
+                      Estrutura moderna e profissional
                     </h2>
                   </div>
 
-                  <div className="rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-3 py-1 text-xs font-semibold text-white">
+                  <div className="rounded-full bg-gradient-to-r from-[#694eef] to-[#2e9cfe] px-3 py-1 text-xs font-semibold text-white">
                     Oficial
                   </div>
                 </div>
 
                 <div className="grid gap-4">
-                  <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                    <p className="text-sm text-slate-500">
-                      Treinamentos e workshops - Recrutamento facilitado
+
+                  <div className="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur">
+                    <p className="text-sm text-white/60">
+                      Treinamentos e Workshops
                     </p>
-                    <p className="mt-2 text-2xl font-bold text-slate-950">
-                      Aprenda exatamente o que fazer nas lives com estratégias que realmente funcionam
+                    <p className="mt-2 text-2xl font-bold text-white">
+                      Aprenda exatamente o que fazer nas lives com estrategias que realmente funcionam.
                     </p>
                   </div>
 
                   <div className="grid gap-4 sm:grid-cols-2">
-                    <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                      <p className="text-sm text-slate-500">Suporte - Acompanhamento individual</p>
-                      <p className="mt-2 text-lg font-semibold text-slate-900">
-                        Você não fica perdido, recebe suporte próximo para evoluir com direção
+
+                    <div className="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur">
+                      <p className="text-sm text-white/60">Acompanhamento Individual</p>
+                      <p className="mt-2 text-lg font-semibold text-white">
+                        Você não fica perdido - Recebe o suporte próximo para evoluir com direção.
                       </p>
                     </div>
 
-                    <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                      <p className="text-sm text-slate-500">Crescimento - Aulas de inglês e espanhol</p>
-                      <p className="mt-2 text-lg font-semibold text-slate-900">
-                        Amplie suas oportunidades e alcance novos públicos nas plataformas
+                    <div className="rounded-3xl bg-white/5 p-5 ring-1 ring-white/10 backdrop-blur">
+                      <p className="text-sm text-white/60">Aulas de Inglês e Espanhol</p>
+                      <p className="mt-2 text-lg font-semibold text-white">
+                        Amplie suas oportunidades e alcance novos publicos nas plataformas.
                       </p>
                     </div>
+
                   </div>
 
-                  <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                    <p className="text-sm text-slate-500">
-                      Presença digital profissional
-                    </p>
-                    <p className="mt-2 text-lg font-semibold">
+                  <div className="rounded-3xl bg-gradient-to-r from-[#0f172a] to-[#0b1220] p-5 text-white ring-1 ring-white/10">
+                    <p className="text-sm text-white/60">
                       Sistema de incentivos
-                      Seu esforço e dedicação são reconhecidos com benefícios e incentivos internos
+                    </p>
+                    <p className="mt-2 text-lg font-semibold">
+                      Seu esforço e dedicação são reconhecidos com benefícios e incentivos internos.
                     </p>
                   </div>
 
-                  <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100">
-                    <p className="text-sm text-slate-500">
-                      Incentivo profissional
+                  <div className="rounded-3xl bg-gradient-to-r from-[#0f172a] to-[#0b1220] p-5 text-white ring-1 ring-white/10">
+                    <p className="text-sm text-white/60">
+                      Premiações por desempenho
                     </p>
                     <p className="mt-2 text-lg font-semibold">
-                      Premiações por desempenho
-                      Destaque-se e conquiste premios exclusivos
+                      Destaque-se e conquiste prêmios exclusivos.
                     </p>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -222,10 +227,11 @@ export default function App() {
               Plataformas
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-950 md:text-4xl">
-              Agência Parceira Oficial de Plataformas de Streaming
+              Agência oficial das principais plataformas
             </h2>
             <p className="mt-4 text-slate-600">
-              Trabalhamos em parceria com plataformas de streaming, oferecendo oportunidades reais de crescimento e desenvolvimento no mercado de lives.
+              Estrutura conectada ao TikTok e ao Alii para oferecer mais
+              confiança, suporte e oportunidade para novos streamers.
             </p>
           </div>
 
@@ -248,8 +254,7 @@ export default function App() {
               <div className="mt-6 text-center">
                 <h3 className="text-2xl font-bold text-slate-950">TikTok</h3>
                 <p className="mt-2 text-slate-600">
-                  Plataforma global com grande alcance, ideal para crescimento,
-                  consistência e novas oportunidades em lives.
+                  Uma das maiores redes sociais atualmente, o Tiktok oferece alto potencial de visibilidade e crescimento, sendo ideal pra quem deseja se destacar e construir audiencia no mercado digital. Perfeito para todos os tipos de criadores, desde o iniciante ao mais experiente.
                 </p>
               </div>
             </motion.div>
@@ -272,8 +277,7 @@ export default function App() {
               <div className="mt-6 text-center">
                 <h3 className="text-2xl font-bold text-slate-950">Alii</h3>
                 <p className="mt-2 text-slate-600">
-                  Mais uma frente de atuação para ampliar presença, performance
-                  e oportunidades dentro do universo das lives.
+                   É um aplicativo focado exclusivamente em lives, voltado para criadores que ja possum experiencia no universo de streaming e buscam um ambiente mais direcionado e profissional.
                 </p>
               </div>
             </motion.div>
@@ -293,15 +297,28 @@ export default function App() {
               Sobre
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
-              Se você se identifica com isso, a Oceans é pra você
+              Como a Oceans surgiu
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Você quer começar nas lives ou já tentou antes, mas não teve os resultados que esperava.
-              Sente que falta direcionamento, estratégia e alguém para te mostrar o caminho certo.
+              A Oceans não nasceu de teoria. Nasceu da prática.
 
-              Às vezes parece que está fazendo tudo sozinha, sem saber o que realmente funciona — e isso acaba desmotivando.
+              Em 2020, ainda no último semestre da faculdade de engenharia ambiental, surgiu o primeiro contato com esse mercado. Na época, a ideia era simples: ter uma renda própria enquanto finalizava a graduação.
 
-              Se você busca uma forma real de crescer e transformar suas lives em uma oportunidade de renda, você está no lugar certo.
+              Mas tudo mudou muito rápido. Com o início da pandemia e o lockdown, veio também a oportunidade de se dedicar de verdade às lives. Foram horas, consistência e muito aprendizado na prática — e os primeiros resultados começaram a aparecer já nos primeiros meses.
+
+              Com o tempo, veio o destaque dentro da agência em que fazia parte e, junto com isso, a oportunidade de ajudar outros criadores que estavam começando. Foi ali que surgiu um sonho maior: não só crescer, mas também ensinar o caminho.
+
+              A transição para o TikTok trouxe ainda mais crescimento, novas possibilidades e a confirmação de que esse era um mercado com potencial real. E entao o sonho comecou a se tornar realidade
+
+              Mais do que uma agência, a Oceans surgiu com um propósito muito claro — oferecer liberdade. Liberdade de trabalhar de casa, de construir uma renda própria e de viver uma rotina mais leve e flexível.
+
+              Ao longo dessa trajetória, as lives também proporcionaram algo que antes parecia distante: a possibilidade de conhecer o mundo. Nos últimos anos, foram 17 países visitados, com tudo sendo construído através desse mercado.
+
+              E foi justamente essa vivência que definiu o propósito da agência: mostrar que existe um outro caminho possível.
+
+              Chegamos com um olhar mais humano. Aqui, cada criador é visto como uma pessoa com objetivos, sonhos e uma história única — não apenas como números.
+
+              Hoje, a agência existe para compartilhar conhecimento, encurtar caminhos e abrir portas para quem também quer transformar as lives em uma oportunidade real.
             </p>
           </motion.div>
 
@@ -328,43 +345,38 @@ export default function App() {
         </div>
       </section>
 
-
-      <section id="beneficios" className="bg-slate-950 py-20 text-white">
+      <section id="beneficios" className="bg-slate-50 py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">
-              Benefícios
-            </p>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
-              Estrutura pensada para gerar mais confiança e oportunidade
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
+              Agora que você ja conhece a Oceans, é importante entender se esse caminho é para você
             </h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+              Se você...
+            </p>
           </div>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {[
-              ["Suporte de verdade", "Acompanhamento próximo para quem está começando."],
-              ["Mais organização", "Processos mais claros para facilitar o recrutamento."],
-              ["Crescimento", "Estratégia e apoio para evoluir nas plataformas."],
-              ["Oportunidade", "Um ambiente pensado para novas possibilidades de renda."],
-            ].map(([title, text], i) => (
+              ["Tem acesso a um celular e internet e quer começar a crescer no mercado digital."],
+              ["Quer construir uma nova fonte de renda."],
+              ["Busca a possibilidade de trabalhar de onde quiser."],
+              ["Está disposto a se dedicar."],
+              ["Já fez ou faz lives, mas sente que falta direcionamento, estrategia e suporte."]
+            ].map(([title, text]) => (
               <div
                 key={title}
-                className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:bg-white/10"
+                className="rounded-3xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
-                {/* Número igual ao outro bloco */}
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-[#694eef] to-[#2e9cfe] text-sm font-bold text-white">
-                  {String(i + 1).padStart(2, "0")}
-                </div>
-
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold text-slate-950">
                   {title}
                 </h3>
-
-                <p className="mt-2 text-white/70">
-                  {text}
-                </p>
+                <p className="mt-2 text-slate-600">{text}</p>
               </div>
             ))}
+            <p className="mt-4 text-3xl font-bold uppercase tracking-tight md:text-4xl tracking-[0.2em] text-blue-600">
+              Você esta no lugar certo!
+            </p>
           </div>
         </div>
       </section>
@@ -373,19 +385,17 @@ export default function App() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">
-              Como funciona
+              Primeiros passos
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
-              Um processo simples, direto e pensado para facilitar sua entrada
+              Seja um agenciado
             </h2>
           </div>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {[
-              "Entre em contato com a equipe",
-              "Entenda como a agência funciona",
-              "Receba orientação para começar",
-              "Desenvolva sua rotina e acompanhe sua evolução",
+              "Quero trabalhar para o TikTok",
+              "Quero trabalhar para o Alii",
             ].map((step, i) => (
               <div
                 key={step}
@@ -406,28 +416,16 @@ export default function App() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">
-                Comece agora
+                Depoimentos
               </p>
               <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
-                Dê o próximo passo com uma estrutura mais profissional
+                Historias reais, resultados reais
               </h2>
               <p className="mt-4 text-lg text-blue-50/90">
-                Entre em contato com a equipe da Oceans e descubra como funciona
-                o processo para fazer parte da agência.
+                Um olhar mais proximo, sobre a trajetoria de criadores que estão conquistando seu espaço no mercado de lives.
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 lg:items-end">
-              <button
-                onClick={openWhatsapp}
-                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.05]"
-              >
-                Falar com a equipe
-              </button>
-              <p className="text-sm text-blue-100/90">
-                Atendimento rápido e direcionamento personalizado
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -485,12 +483,12 @@ export default function App() {
             <br />
             Desenvolvido por{" "}
             <a
-              href="https://avus-digital.vercel.app/"
+              href="https://adler-neves.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-white"
             >
-              Avus Digital
+              Adler Neves
             </a>
           </div>
         </div>
