@@ -59,7 +59,7 @@ export default function App() {
             onClick={openWhatsapp}
             className="hidden rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 md:block"
           >
-            WhatsApp
+            Login
           </button>
 
           <button
@@ -110,7 +110,7 @@ export default function App() {
             transition={{ duration: 0.7 }}
           >
             <p className="mb-4 text-sm font-semibold text-blue-600">
-              Agência especilizada em crescimento de criadores 
+              Agência especilizada em crescimento de criadores
             </p>
 
             <h1 className="text-4xl font-bold leading-tight md:text-5xl">
@@ -157,12 +157,8 @@ export default function App() {
                       Oceans
                     </p>
                     <h2 className="text-xl font-semibold text-white">
-                      Estrutura moderna e profissional
+                      Benefícios de ser agenciado
                     </h2>
-                  </div>
-
-                  <div className="rounded-full bg-gradient-to-r from-[#694eef] to-[#2e9cfe] px-3 py-1 text-xs font-semibold text-white">
-                    Oficial
                   </div>
                 </div>
 
@@ -277,7 +273,7 @@ export default function App() {
               <div className="mt-6 text-center">
                 <h3 className="text-2xl font-bold text-slate-950">Alii</h3>
                 <p className="mt-2 text-slate-600">
-                   É um aplicativo focado exclusivamente em lives, voltado para criadores que ja possum experiencia no universo de streaming e buscam um ambiente mais direcionado e profissional.
+                  É um aplicativo focado exclusivamente em lives, voltado para criadores que ja possum experiencia no universo de streaming e buscam um ambiente mais direcionado e profissional.
                 </p>
               </div>
             </motion.div>
@@ -299,48 +295,81 @@ export default function App() {
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
               Como a Oceans surgiu
             </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
+            <p className="mt-6 text-lg leading-8 text-slate-600 md:text-justify whitespace-pre-line">
               A Oceans não nasceu de teoria. Nasceu da prática.
+              <br />
+              <br />
 
               Em 2020, ainda no último semestre da faculdade de engenharia ambiental, surgiu o primeiro contato com esse mercado. Na época, a ideia era simples: ter uma renda própria enquanto finalizava a graduação.
+              <br />
+              <br />
 
               Mas tudo mudou muito rápido. Com o início da pandemia e o lockdown, veio também a oportunidade de se dedicar de verdade às lives. Foram horas, consistência e muito aprendizado na prática — e os primeiros resultados começaram a aparecer já nos primeiros meses.
+              <br />
+              <br />
 
               Com o tempo, veio o destaque dentro da agência em que fazia parte e, junto com isso, a oportunidade de ajudar outros criadores que estavam começando. Foi ali que surgiu um sonho maior: não só crescer, mas também ensinar o caminho.
+              <br />
+              <br />
 
-              A transição para o TikTok trouxe ainda mais crescimento, novas possibilidades e a confirmação de que esse era um mercado com potencial real. E entao o sonho comecou a se tornar realidade
+              A transição para o TikTok trouxe ainda mais crescimento, novas possibilidades e a confirmação de que esse era um mercado com potencial real. E entao o sonho comecou a se tornar realidade.
+              <br />
+              <br />
 
               Mais do que uma agência, a Oceans surgiu com um propósito muito claro — oferecer liberdade. Liberdade de trabalhar de casa, de construir uma renda própria e de viver uma rotina mais leve e flexível.
+              <br />
+              <br />
 
               Ao longo dessa trajetória, as lives também proporcionaram algo que antes parecia distante: a possibilidade de conhecer o mundo. Nos últimos anos, foram 17 países visitados, com tudo sendo construído através desse mercado.
+              <br />
+              <br />
 
               E foi justamente essa vivência que definiu o propósito da agência: mostrar que existe um outro caminho possível.
+              <br />
+              <br />
 
               Chegamos com um olhar mais humano. Aqui, cada criador é visto como uma pessoa com objetivos, sonhos e uma história única — não apenas como números.
+              <br />
+              <br />
 
               Hoje, a agência existe para compartilhar conhecimento, encurtar caminhos e abrir portas para quem também quer transformar as lives em uma oportunidade real.
+              <br />
+              <br />
             </p>
           </motion.div>
 
-          <div className="grid gap-4">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <h3 className="text-lg font-semibold text-slate-950">
-                Atendimento humanizado
-              </h3>
-              <p className="mt-2 text-slate-600">
-                Apoio próximo para facilitar a entrada de novos agenciados.
-              </p>
+          <div className="grid grid-cols-2 gap-4">
+
+            {/* img1 */}
+            <div className="col-span-2 overflow-hidden rounded-[2rem] shadow-lg">
+              <img
+                src="public\f1.jpeg"
+                className="h-40 w-full object-cover"
+              />
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <h3 className="text-lg font-semibold text-slate-950">
-                Mais clareza no processo
-              </h3>
-              <p className="mt-2 text-slate-600">
-                Tudo organizado para tornar o contato mais simples, direto e
-                profissional.
-              </p>
+            {/* img2 */}
+            <img
+              src="public\f2.jpeg"
+              alt=""
+              className="h-36 w-full rounded-[2rem] object-cover"
+            />
+
+            {/* img3 */}
+            <img
+              src="public\f3.jpeg"
+              alt=""
+              className="h-36 w-full rounded-[2rem] object-cover"
+            />
+
+            {/* img4 */}
+            <div className="col-span-2 overflow-hidden rounded-[2rem] shadow-lg">
+              <img
+                src="public\f4.jpeg"
+                className="h-40 w-full object-cover"
+              />
             </div>
+
           </div>
         </div>
       </section>
@@ -483,12 +512,12 @@ export default function App() {
             <br />
             Desenvolvido por{" "}
             <a
-              href="https://adler-neves.vercel.app/"
+              href="https://avus-digital.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-white"
             >
-              Adler Neves
+              Avus Digital
             </a>
           </div>
         </div>
