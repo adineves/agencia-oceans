@@ -29,9 +29,9 @@ export default function App() {
   const nav = [
     { name: "Início", href: "#inicio" },
     { name: "Sobre", href: "#sobre" },
-    { name: "Benefícios", href: "#beneficios" },
-    { name: "Como funciona", href: "#como-funciona" },
-    { name: "Contato", href: "#contato" },
+    { name: "Caminho", href: "#beneficios" },
+    { name: "Primeiros Passos", href: "#como-funciona" },
+    { name: "Depoimentos", href: "#contato" },
   ];
 
   return (
