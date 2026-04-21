@@ -26,6 +26,17 @@ export default function App() {
     window.open(`https://wa.me/${number}?text=${msg}`, "_blank");
   };
 
+  const showMaintenance = () => {
+  const msg = document.createElement("div");
+  msg.innerText = "Área de login em manutenção";
+  msg.className =
+    "fixed top-6 left-1/2 -translate-x-1/2 bg-black text-white px-6 py-3 rounded-full shadow-lg z-50";
+
+  document.body.appendChild(msg);
+
+  setTimeout(() => msg.remove(), 2500);
+};
+
   const nav = [
     { name: "Início", href: "#inicio" },
     { name: "Sobre", href: "#sobre" },
@@ -56,7 +67,15 @@ export default function App() {
           </nav>
 
           <button
-            onClick={openWhatsapp}
+            onClick={() => {
+              const msg = document.createElement("div");
+              msg.innerText = "Área de login em manutenção";
+              msg.className =
+                "fixed top-6 left-1/2 -translate-x-1/2 bg-black text-white px-6 py-3 rounded-full shadow-lg z-50";
+              document.body.appendChild(msg);
+
+              setTimeout(() => msg.remove(), 2500);
+            }}
             className="hidden rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 md:block"
           >
             Login
@@ -86,10 +105,10 @@ export default function App() {
               ))}
 
               <button
-                onClick={openWhatsapp}
+                onClick={() => alert("Área de login em manutenção")}
                 className="mt-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white"
               >
-                WhatsApp
+                Login
               </button>
             </div>
           </div>
@@ -338,37 +357,27 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col gap-6 w-full max-w-sm ml-auto">
 
-            {/* img1 */}
-            <div className="col-span-2 overflow-hidden rounded-[2rem] shadow-lg">
-              <img
-                src="public\f1.jpeg"
-                className="h-40 w-full object-cover"
-              />
-            </div>
-
-            {/* img2 */}
             <img
-              src="public\f2.jpeg"
-              alt=""
-              className="h-36 w-full rounded-[2rem] object-cover"
+              src="/f1.jpeg"
+              className="w-full aspect-video object-cover rounded-xl"
             />
 
-            {/* img3 */}
             <img
-              src="public\f3.jpeg"
-              alt=""
-              className="h-36 w-full rounded-[2rem] object-cover"
+              src="/f2.jpeg"
+              className="w-full aspect-video object-cover rounded-xl"
             />
 
-            {/* img4 */}
-            <div className="col-span-2 overflow-hidden rounded-[2rem] shadow-lg">
-              <img
-                src="public\f4.jpeg"
-                className="h-40 w-full object-cover"
-              />
-            </div>
+            <img
+              src="/f3.jpeg"
+              className="w-full aspect-video object-cover rounded-xl"
+            />
+
+            <img
+              src="/f4.jpeg"
+              className="w-full aspect-video object-cover rounded-xl"
+            />
 
           </div>
         </div>
@@ -385,34 +394,41 @@ export default function App() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              ["Tem acesso a um celular e internet e quer começar a crescer no mercado digital."],
-              ["Quer construir uma nova fonte de renda."],
-              ["Busca a possibilidade de trabalhar de onde quiser."],
-              ["Está disposto a se dedicar."],
-              ["Já fez ou faz lives, mas sente que falta direcionamento, estrategia e suporte."]
-            ].map(([title, text]) => (
-              <div
-                key={title}
-                className="rounded-3xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <h3 className="text-lg font-semibold text-slate-950">
-                  {title}
-                </h3>
-                <p className="mt-2 text-slate-600">{text}</p>
-              </div>
-            ))}
-            <p className="mt-4 text-3xl font-bold uppercase tracking-tight md:text-4xl tracking-[0.2em] text-blue-600">
-              Você esta no lugar certo!
-            </p>
+          <div className="mt-12 max-w-2xl">
+
+            <div className="rounded-3xl bg-white p-10 shadow-sm">
+
+              <ul className="space-y-5">
+                {[
+                  "Tem acesso a um celular e internet e quer começar a crescer no mercado digital.",
+                  "Quer construir uma nova fonte de renda.",
+                  "Busca a possibilidade de trabalhar de onde quiser.",
+                  "Está disposto a se dedicar.",
+                  "Já fez ou faz lives, mas sente que falta direcionamento, estratégia e suporte."
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-4 text-lg text-slate-700">
+
+                    {/* bolinha */}
+                    <span className="mt-2.5 h-2.5 w-2.5 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 shrink-0"></span>
+
+                    <span>{item}</span>
+
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-10 text-3xl font-bold text-blue-600">
+                Você está no lugar certo!
+              </p>
+
+            </div>
           </div>
         </div>
       </section>
 
       <section id="como-funciona" className="bg-slate-950 py-20 text-white">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mx-auto text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">
               Primeiros passos
             </p>
@@ -421,21 +437,27 @@ export default function App() {
             </h2>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              "Quero trabalhar para o TikTok",
-              "Quero trabalhar para o Alii",
-            ].map((step, i) => (
-              <div
-                key={step}
-                className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-              >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-500 to-violet-500 text-sm font-bold text-white">
-                  {String(i + 1).padStart(2, "0")}
+          <div className="mt-12 flex justify-center">
+            <div className="grid gap-5 md:grid-cols-2 max-w-2xl w-full">
+
+              {[
+                "Quero trabalhar para o TikTok",
+                "Quero trabalhar para o Alii",
+              ].map((step, i) => (
+                <div
+                  key={step}
+                  onClick={() => openWhatsapp(i === 0 ? "tiktok" : "alii")}
+                  className="cursor-pointer rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10 hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-500 to-violet-500 text-sm font-bold text-white">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+
+                  <p className="text-lg font-medium">{step}</p>
                 </div>
-                <p className="text-lg font-medium">{step}</p>
-              </div>
-            ))}
+              ))}
+
+            </div>
           </div>
         </div>
       </section>
